@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(255, 131, 252);
+    height: 100px;
+    margin: 0;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#Love-Lee {
+    float: left;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+#SearchQuery {
+    float:left;
+}
+
+#SearchBar {
+    float: left;
+    padding: 14px;
+    padding-right:500px;
+    font-size: 13px;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-right: -16px;
+}
+
+#SearchIcon {
+    float: left;
+    height:47px;
+    width:47px;
+    margin-top: 22px;
+    margin-left: -7px;
+}
+
+.TopRightIcon {
+    float:right;
+    height:47px;
+    width:47px;
+    margin-right: 16px;
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    background: rgb(255, 131, 252);
+    height: 50px;
+    margin: 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+p {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h1 {
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    background-color: rgb(255, 131, 252);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15pt;
+}
+
+.RecommendedSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RecommendedItem {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid rgb(255, 131, 252);
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.CategoryBar {
+    display: flex;
+    justify-content: center;
+}
+
+.Category {
+    flex: auto;
+    text-align: center;
+    background-color: rgb(203, 166, 252);
+    border: 2px solid white;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+}
+
+button {
+    flex: auto;
+    margin: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 131, 252);
+    line-height: 1.3;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    color: rgb(255, 0, 153);
+    text-decoration: underline;
+}
+
+button.BuyNow {
+    background-color: rgb(161, 74, 38);
+}
+
+button.AddToCart {
+    background-color: rgb(203, 166, 252);
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+img#BottomSticker {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (width < 1250px) {
+    .RecommendedItem {font-size: 8pt;}
+    #SearchBar {padding-right: 0px;}
+}
+
+@media screen and (width < 900px) {
+    .RecommendedSection {flex-direction: column;}
+    .RecommendedItem {width: 90%; font-size: 13pt;}
+    img#BottomSticker {width: 50px; height: 50px;}
+}
+
+@media screen and (width < 600px) {
+    .CategoryBar {flex-direction:column;}
+    header {font-size: 10pt;}
+    #Love-Lee {margin-top: 30px; padding: 0px;}
+    #SearchBar {margin-left: 15px; padding: 0px;}
+    #SearchIcon {height: 19px; width: 19px;}
+    .TopRightIcon {margin-right: 5px; height: 19px; width: 19px;}
+}
